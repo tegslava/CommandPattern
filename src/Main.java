@@ -23,7 +23,6 @@ public class Main {
                 MenuItems.showMenu();
                 if (!procInput(scanner.nextLine(), commands, commandsRedo, frog)) {
                     frog.drawPositon();
-                    //System.out.printf(" curCommand = %s %s\n", curCommand, commands.size());
                 } else break;
             }
         } finally {
@@ -71,7 +70,6 @@ public class Main {
                 } else {
                     commandsRedo.addFirst(commands.get(curCommand));
                     commands.get(curCommand).undo();
-                    //commands.remove(curCommand);
                     curCommand--;
                 }
                 break;

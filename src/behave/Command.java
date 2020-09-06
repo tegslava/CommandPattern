@@ -23,7 +23,6 @@ public class Command implements FrogCommand {
             System.out.printf(">%s:%d -> Ok\n", name, steps);
             return true;
         } else {
-            //steps = 0;
             System.out.printf(">%s:%d -> Cancel (Стенка)\n", name, steps);
             return false;
         }

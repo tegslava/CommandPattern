@@ -6,7 +6,7 @@ public class FrogCommands {
     }
 
     public static FrogCommand jumpLeftCommand(Frog frog, int steps) {
-        return new Command(frog, steps,"Прыжок влево" );
+        return new Command(frog, steps, "Прыжок влево");
     }
 
 }
